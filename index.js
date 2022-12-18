@@ -63,7 +63,7 @@ class Enemy{
 const x=canvas.width /2;
 const y= canvas.height -(canvas.height*0.1);
 //color
-const colorPalatte =['#ff2079','#04d9ff','#ebe91b','#d83682','#ff0000','#39ff14','#aa00ff'];
+const colorPalatte =['#ff0000','#ff9100','#eaff00','#77ff00','#00f2ff','#0044ff','#bb00ff','#ff00d0'];
 var colorpicker =Math.floor(Math.random()*7);
 let colour=colorPalatte[colorpicker];
 
