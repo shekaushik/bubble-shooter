@@ -98,7 +98,7 @@ const enemys =[];
 makingEnemy();
 
 function makingEnemy(){
-    var noof_balls = innerWidth / (2 * 30);
+    var noof_balls = innerWidth / (2 * r);
     for (var i = 0; i <= noof_balls; i++) {
         var enemy_colorpicker = Math.floor(Math.random() * 8);
         let enemy_colour = colorPalatte[enemy_colorpicker];
