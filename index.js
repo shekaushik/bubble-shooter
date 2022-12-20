@@ -19,7 +19,7 @@ class Player{
         c.strokeStyle="this.colour";
         c.stroke();
         // Create gradient
-        var grd = c.createRadialGradient(this.x+12, this.y-15, r/60, this.x, this.y, r+1.5);
+        var grd = c.createRadialGradient(this.x+r/3, this.y-r/2, r/60, this.x, this.y, r+1.5);
         grd.addColorStop(0, this.gradient);
         grd.addColorStop(1, this.colour);
 
@@ -67,7 +67,7 @@ class Enemy {
         c.strokeStyle='black';
         c.stroke();
         // Create gradient
-        var grd = c.createRadialGradient(this.x+12, this.y-15, r/60, this.x, this.y, r+1.5);
+        var grd = c.createRadialGradient(this.x+r/3, this.y-r/2, r/60, this.x, this.y, r+1.5);
         grd.addColorStop(0, this.gradient);
         grd.addColorStop(1, this.colour);
 
@@ -147,9 +147,7 @@ function checkAdjacent(arr,index,n) {
         console.log(arr[i+1].colour);
         if (arr[i].colour == arr[i + 1].colour && arr[i].x + 2*r == arr[i+ 1].x ) {
             count++;
-            console.log('noticed');
         } else {
-            console.log('ni mila');
             break;
         }
     }
