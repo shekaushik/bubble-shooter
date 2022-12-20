@@ -19,7 +19,7 @@ class Player{
         c.strokeStyle="this.colour";
         c.stroke();
         // Create gradient
-        var grd = c.createRadialGradient(this.x+12, this.y-15, 0.5, this.x, this.y, 32);
+        var grd = c.createRadialGradient(this.x+12, this.y-15, r/60, this.x, this.y, r+1.5);
         grd.addColorStop(0, this.gradient);
         grd.addColorStop(1, this.colour);
 
@@ -67,7 +67,7 @@ class Enemy {
         c.strokeStyle='black';
         c.stroke();
         // Create gradient
-        var grd = c.createRadialGradient(this.x+12, this.y-15, 0.5, this.x, this.y, 32);
+        var grd = c.createRadialGradient(this.x+12, this.y-15, r/60, this.x, this.y, r+1.5);
         grd.addColorStop(0, this.gradient);
         grd.addColorStop(1, this.colour);
 
